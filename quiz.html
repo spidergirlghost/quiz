@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz - Asfixia e Afogamento</title>
+
+    <link rel="stylesheet" href="quiz.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- TELA INICIAL -->
+
+    <section id="telaInicial" class="tela">
+
+        <div class="card">
+
+            <h1>🩺 Quiz de Primeiros Socorros</h1>
+
+            <h2>Asfixia e Afogamento</h2>
+
+            <p>
+                Teste seus conhecimentos sobre primeiros socorros.
+                Digite seu nome para começar.
+            </p>
+
+            <input
+                type="text"
+                id="nomeJogador"
+                placeholder="Digite seu nome">
+
+            <button id="btnComecar">
+                Começar
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- QUIZ -->
+
+    <section id="quiz" class="tela escondido">
+
+        <div class="quiz-card">
+
+            <div class="topo">
+
+                <h2 id="nomeQuiz">
+                    Quiz de Primeiros Socorros
+                </h2>
+
+                <span id="contador">
+                    Pergunta 1 de 20
+                </span>
+
+            </div>
+
+            <div class="barra">
+
+                <div id="progresso"></div>
+
+            </div>
+
+            <h3 id="pergunta">
+
+                Pergunta
+
+            </h3>
+
+            <div id="respostas" class="respostas">
+
+            </div>
+
+            <button id="btnProxima">
+
+                Próxima →
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- RESULTADO -->
+
+    <section id="resultado" class="tela escondido">
+
+        <div class="card resultado">
+
+            <h1>🏆 Resultado</h1>
+
+            <h2 id="nomeResultado"></h2>
+
+            <div class="estatisticas">
+
+                <div class="box">
+
+                    <h3>Acertos</h3>
+
+                    <span id="acertos"></span>
+
+                </div>
+
+                <div class="box">
+
+                    <h3>Erros</h3>
+
+                    <span id="erros"></span>
+
+                </div>
+
+            </div>
+
+            <h2>Porcentagem</h2>
+
+            <div class="barraResultado">
+
+                <div id="barraPorcentagem"></div>
+
+            </div>
+
+            <h1 id="porcentagem"></h1>
+
+            <div class="rank">
+
+                <h2>Seu Rank</h2>
+
+                <h1 id="rank"></h1>
+
+            </div>
+
+            <button id="btnReiniciar">
+
+                Jogar Novamente
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- RANKING -->
+
+    <section id="ranking" class="tela escondido">
+
+        <div class="card">
+
+            <h1>🥇 Ranking Geral</h1>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Posição</th>
+                        <th>Nome</th>
+                        <th>%</th>
+                        <th>Rank</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tabelaRanking">
+
+                </tbody>
+
+            </table>
+
+            <button id="btnNovo">
+
+                Novo Jogador
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
